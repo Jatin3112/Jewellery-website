@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  margin-top: 50px;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background: #111;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  box-shadow: 1px -1px 30px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+  min-width: 250px;
+  min-height: 250px;
+  flex-shrink:0;
+}
+
+.photos:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 400ms;
+  opacity: 0.9;
+}
+
+.photos:nth-child(1) {
+  background: url(data:image/jpeg;base64,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);
+  background-size: cover;
+}
+
+.photos:nth-child(2) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LaVE72O9dDVI_6aEaE6QEhdY-MaBlbFBvQ&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(3) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkywyebj5ruWUnLIxr3GRu1_NEkc64HJrtXw&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(4) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMcMzAJMVuT5aKawVc74paF5BZgpmAlnj-g&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(5) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O-z5b_iSTMzoyO3P1jxEipiKh_4EvztJvA&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(6) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlQ4JxPmryEq6MhomqscfNFaXedoDNSWuPcPjn6DoveW0bsqU6n5F7j4v7Vd2Hhc1_pA&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(7) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzeLZg7JjC8VnPsJMAMKIzY4MQfouYPYZ4Xw&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(8) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAHRN9vtAwcw4kmCl8IYr_cS3vKgABxCIIgw&usqp=CAU);
+  background-size: cover;
+}
+
+.photos:nth-child(9) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mD8bEU-o9RSLX0bcl-cIFHagSm3veXHKoQ&usqp=CAU);
+  background-size: cover;
+}
+.photos:nth-child(10) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJSnpDrwPaFR1Wo1yhwHFJLf7iHYnrzaI2jElRgBjcHpAwRRGC9xgRecjf5e_512ePZE&usqp=CAU);
+  background-size: cover;
+}
+.photos:nth-child(11) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-EJmxFg3XfF61ym5CU7N-OdUTfrnNlZfiA&usqp=CAU);
+  background-size: cover;
+}
+.photos:nth-child(12) {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiXj1yFT230vtvZ2QGgwF70Zq8c-cVupkvag&usqp=CAU);
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .photos {
+    min-width: 290px;
+    min-height: 190px;
+}
+  
+@media screen and (max-width: 320px) {
+  .photos {
+    min-width: 220px;
+    min-height: 120px;
+  }
+}}

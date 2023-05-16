@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.gift-card-heading{
+  color: #fff;
+  margin-top: 100px;
+}
+
+body{
+  margin-top: 50px;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background: #111;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .photos {
+    min-width: 290px;
+    min-height: 190px;
+}
+  
+@media screen and (max-width: 320px) {
+  .photos {
+    min-width: 220px;
+    min-height: 120px;
+  }
+}}
